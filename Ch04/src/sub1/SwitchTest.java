@@ -34,12 +34,12 @@ public class SwitchTest {
 		System.out.print("점수 입력: ");
 		int score = sc.nextInt();
 		
-		System.out.println("입력한 점수는"+score+"입니다.");
+		System.out.println("입력한 점수는"+score+"입니다. ");
 		
 		int grade = score / 10;
 		
 		switch(grade) {
-		
+		case 10:
 		case 9:
 			System.out.println("등급은 A입니다.");
 			break;
