@@ -24,7 +24,7 @@ public class MultiArrayTest {
 		
 		for(int a=0 ; a<arr2d.length ; a++) {
 			for(int b=0 ; b<arr2d[a].length ; b++ ) {
-				System.out.println("배열 arr2d의 "+(a+1)+"행"+(b+1)"열 원소: "+arr2d[a][b]);			
+				System.out.println("배열 arr2d의 "+(a+1)+"행"+(b+1)"열 원소:"+arr2d[a][b]);			
 			}		
 		}
 		
@@ -42,6 +42,7 @@ public class MultiArrayTest {
 			                 {28, 29, 30},
 			                 {31, 32, 33},
 			                 {34, 35, 36}}};
+		
 		
 		System.out.println("3차원 배열 1면1행1열 :"+arr3d[0][0][0]);
 		System.out.println("3차원 배열 1면3행3열 :"+arr3d[0][2][2]);
