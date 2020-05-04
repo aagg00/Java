@@ -10,7 +10,7 @@ public class ForTest {
 	public static void main(String[] args) {
 		
 		//for
-		for(int i=1 ; i<3 ; i++) {
+		for(int i=1 ; i=<3 ; i++) {
 			System.out.println("Hello Java!");
 		}
 		
@@ -18,7 +18,7 @@ public class ForTest {
 		int sum = 0;
 		
 		for(int k=1 ; k<=10 ; k++) {
-			sum = sum + 1;
+			    sum += k;
 		}
 		
 		System.out.println("1부터 10까지 합: "+sum);
@@ -31,11 +31,11 @@ public class ForTest {
 			
 			if(k % 2 == 0) {
 				eSum += k;
-			}
+			} 
 			
 		}
 		
-		System.out.println("1부터 10까지 짝수합 : "+eSum );
+		System.out.println("1부터 10까지 짝수함 : "+eSum );
 		
 		//이중 for문합
 		for(int a=1 ; a<=3 ; a++) {
@@ -49,9 +49,41 @@ public class ForTest {
 		}
 		
 		//구구단
+		for(int x=2 ; x<=9 ; x++) {
+			
+			System.out.println(x+"단");
+			
+			for(int y=1 ; y<=9 ; y++) {
+				
+				int z= x * y;
+				System.out.println(x+" x "+y+" = "+z);	
+				
+			}
+			
+		}
+		
 		//별 삼각형 I
+		for(int start=10 ; start>=1 ; start--) {
+			
+			for(int end=1 ; end <= start ; end++) {
+				System.out.print("☆");
+			}
+			
+			System.out.print("\n");
+		
+		}
+		
 		//별 삼r각형 II
+		for(int a=1 ; a<=5 ; a++) {
+			
+			for(int b=1 ; b<=5-a ; b++) {
+				System.out.print("☆");
+			}	
+			
+			for(int c=1 ; c<=a ; c++)  {
+				System.out.print("★");
+			}
 		
-		
-	}
+		    System.out.print("\n");
+		}
 }
